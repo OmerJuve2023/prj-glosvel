@@ -7,7 +7,7 @@ const HeaderTwo = () => {
             <div className="container-fluid">
                 <div className="d-flex justify-content-between w-100">
                     <div>
-                        <img className={"imgLogito"} src={Logo}/>
+                        <img className={" mx-2 imgLogito"} src={Logo}/>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
