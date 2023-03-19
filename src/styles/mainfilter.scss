@@ -1,0 +1,93 @@
+
+.main-slider {
+  padding: 10px 60px 30px 60px;
+  display: grid;
+  grid-template-columns: (1fr 1fr 1fr 1fr 1fr);
+  gap: 10px;
+  place-content: center;
+  background-color: #e7e7e7;
+}
+
+.Filter_button {
+  margin: 27px 0 0 0;
+  padding: 15px;
+  background-color: #d62c2c;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.Filter_input {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: black;
+}
+
+.Filter_input:focus {
+  box-shadow: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: black;
+  border: 0;
+  outline: none;
+}
+
+.Filter_input_Date {
+  padding: 9px;
+  width: 100%;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+
+}
+
+
+.Search_filter_result {
+  padding-top: 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-slider {
+    padding: 10px 20px 30px 20px;
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    gap: 10px;
+    place-content: center;
+    background-color: #e7e7e7;
+  }
+
+  .Filter_button {
+    margin: 27px 0 0 0;
+    padding: 15px;
+    background-color: #77aca2;
+    color: rgb(0, 0, 0);
+    width: 100%;
+
+  }
+
+  .Filter_input {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Filter_input_Date {
+    padding: 9px;
+    width: 100%;
+  }
+
+  label {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+
+  }
+
+
+}
+
+
