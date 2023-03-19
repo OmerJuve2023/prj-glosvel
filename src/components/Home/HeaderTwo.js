@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo/logo.png"
+import Logo from "../../assets/logo/logotipo 5.0.svg"
 
 const HeaderTwo = () => {
     return (
