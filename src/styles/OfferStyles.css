@@ -56,7 +56,7 @@ h3 {
     grid-template-columns: 1fr 2fr;
     background-color: rgb(212, 16, 49);
     color: white;
-    font-family: "Comic Sans MS", serif;
+    font-family: "Comic Sans MS",serif ;
 }
 
 @media only screen and (max-width: 768px) {
