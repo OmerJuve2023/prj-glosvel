@@ -23,3 +23,18 @@
     object-fit: cover;
 }
 
+.container-mainFilter {
+    background-color: #e7e7e7;
+}
+
+.input-field input:focus {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    outline: none !important;
+    border-color: #d0203b;
+}
+
+.select-field select:focus {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    outline: none !important;
+    border-color: #d0203b;
+}

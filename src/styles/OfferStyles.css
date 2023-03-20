@@ -1,0 +1,125 @@
+.section-heading {
+    padding: 20px 60px 20px 60px;
+    font-weight: 600;
+}
+
+.offer-box {
+    padding: 10px 60px 30px 60px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.offer-boxes {
+    display: grid;
+    padding: 40px;
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr 3fr;
+    min-height: 200px;
+    gap: 1px;
+    background-color: #e7d5d5;
+    color: rgb(0, 0, 0);
+}
+
+.fa-duotone {
+    position: relative;
+    top: 20%;
+    font-size: 60px;
+}
+
+.fa-duotone::before {
+    color: red;
+}
+
+.fa-duotone:after {
+    color: rgb(212, 16, 49);
+}
+
+.fa-duotone {
+    position: relative;
+    top: 20%;
+    font-size: 60px;
+}
+
+.offer-boxes:hover {
+    background-color: #dfdfdf;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.offer-boxes {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(212, 16, 49);
+    color: white;
+    font-family: "Comic Sans MS", serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .offer-box {
+        padding: 10px 10px 20px 10px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .fa-duotone {
+        position: relative;
+        top: 20%;
+        font-size: 60px;
+    }
+
+    .fa-duotone::before {
+        color: red;
+    }
+
+    .fa-duotone:after {
+        color: rgb(212, 16, 49);
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .offer-box {
+        padding: 10px 20px 30px 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offer-boxes {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr 2fr;
+        height: auto;
+        width: 100%;
+        background-color: #e7e7e7;
+        color: white;
+    }
+
+    .fa-duotone {
+        position: relative;
+        top: 20%;
+        font-size: 60px;
+    }
+
+    .fa-duotone::before {
+        color: red;
+    }
+
+    .fa-duotone:after {
+        color: rgb(212, 16, 49);
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
