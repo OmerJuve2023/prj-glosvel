@@ -2,63 +2,50 @@ import React from "react";
 
 function MainFilter() {
     return (
-        <div>
-            <div className="">
-                <div className="main-slider">
-                    <div>
-                        <label className="block mb-2">
-                            De
-                        </label>
-                        <input
-                            type="text"
-                            id="Latur"
-                            className="Filter_input"
-                            placeholder="Lima, Peru"
-                            required
-                        />
+
+        <div className="container">
+            <br/>
+            <form>
+                <div className="row">
+                    <div className="col-sm-6 col-md-3 form-group">
+                        <label className={"mb-2"} htmlFor="opcion1"><b className={"text-danger"}>Salir
+                            desde:</b></label>
+                        <select id="opcion1" className="form-control form-control-lg text-muted">
+                            <option value="1">Huacho</option>
+                            <option value="2">Barranca</option>
+                            <option value="3">Chancay</option>
+                        </select>
                     </div>
-                    <div>
-                        <label className="block mb-2  ">
-                            A
-                        </label>
-                        <input
-                            type="text"
-                            id="first_name"
-                            className="Filter_input"
-                            placeholder="Mumbai, Delhi"
-                            required
-                        />
+                    <div className="col-sm-6 col-md-3 form-group">
+                        <label className={"mb-2"} htmlFor="opcion2"><b className={"text-danger"}>LLegar
+                            hacia:</b></label>
+                        <select id="opcion2" className="form-control form-control-lg text-muted">
+                            <option value="1">Lima (Plaza Norte)</option>
+                            <option value="2">Huaral</option>
+                            <option value="3">Chancay</option>
+                            <option value="3">Barranca</option>
+                        </select>
                     </div>
-                    <div>
-                        <label className="block mb-2  ">
-                            From
-                        </label>
-                        <input
-                            type="Date"
-                            id="first_name"
-                            className="Filter_input_Date"
-                            required
-                        />
+                    <div className="col-sm-6 col-md-3 form-group">
+                        <label className={"mb-2"} htmlFor="fecha1"><b className={"text-danger"}>Fecha de
+                            salida:</b></label>
+                        <input type="date" id="fecha1" className="form-control form-control-lg text-muted"/>
                     </div>
-                    <div>
-                        <label className="block mb-2  ">
-                            To Date
-                        </label>
-                        <input
-                            type="Date"
-                            id="first_name"
-                            className="Filter_input_Date"
-                            placeholder="John"
-                            required
-                        />
+                    <div className="col-sm-6 col-md-3 form-group">
+                        <label className={"mb-2"} htmlFor="fecha2"><b className={"text-danger"}>Fecha de
+                            retorno (opcional):</b></label>
+                        <input type="date" id="fecha2" className="form-control form-control-lg text-muted"/>
                     </div>
-                    <div>
-                        <button type="submit" className="Filter_button">Search</button>
-                    </div>
+
                 </div>
-                {/* <small className="text-white">Ongoing Day Booking Accepts Only Before 17:00 (All Related Information shared on website or app)</small> */}
-            </div>
+                <br/>
+                <div className="d-flex justify-content-center align-items-center">
+                    <button type="submit" className="btn btn-danger btn-lg btn-block w-100 h-100">Enviar</button>
+                </div>
+            </form>
         </div>
+
+
     );
 }
 
