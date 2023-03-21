@@ -4,7 +4,7 @@ import "../../styles/WeOfferStyles.css";
 const WeOffer = () => {
     return (
         <section>
-            <div className="section-heading">
+            <div className="container section-heading">
                 <h3>Características</h3>
             </div>
             <div className="we_offer">

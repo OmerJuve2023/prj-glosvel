@@ -15,9 +15,8 @@ span {
 
 img {
     width: auto;
-    height: 60px;
+    height: 80px;
 }
-
 
 .app_store {
     display: grid;
@@ -82,7 +81,7 @@ small {
 
     img {
         width: auto;
-        height: 60px;
+        height: 80px;
     }
 }
 

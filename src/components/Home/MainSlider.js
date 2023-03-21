@@ -29,21 +29,18 @@ const MainSlider = () => {
         >
             <SwiperSlide>
                 <img
-                    className="object-fill w-full h-96 swiper-slide"
                     src={Poster1}
                     alt="slide 1"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <img
-                    className="object-fill w-full h-96 swiper-slide"
                     src={Poster2}
                     alt="slide 2"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <img
-                    className="object-fill w-full h-96 swiper-slide"
                     src={Poster3}
                     alt="slide 3"
                 />

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import AppStore from "./AppStore";
 import Logo from "../../assets/logo/logotipo 5.0.svg"
-/*import "../../styles/FooterStyles.css";*/
+import "../../styles/FooterStyles.css";
 
 const Footer = () => {
     return (
