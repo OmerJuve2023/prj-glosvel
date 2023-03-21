@@ -7,6 +7,10 @@ import WeOffer from "../components/Home/WeOffer";
 import OurBuses from "../components/Home/OurBuses";
 import Footer from "../components/Home/Footer";
 import "../styles/HomeStyles.css";
+import AppStore from "../components/Home/AppStore";
+import React from "react";
+import Map from "../components/Home/map";
+
 const Home = () => {
     return (
         <div>
@@ -19,6 +23,8 @@ const Home = () => {
             <Offer/>
             <WeOffer/>
             <OurBuses/>
+            <AppStore/>
+            <Map></Map>
             <Footer/>
         </div>
     );
