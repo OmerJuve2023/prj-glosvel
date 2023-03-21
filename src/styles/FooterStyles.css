@@ -10,7 +10,7 @@ footer {
     gap: 30px;
 }
 
-.footer_heading {
+footer_heading {
     padding: 0 0 90px 0;
 }
 
@@ -18,26 +18,24 @@ h5 {
     font-size: 20px;
 }
 
-.Newsletter_button {
+Newsletter_button {
     padding: 10px;
     margin-top: 10px;
     background-color: rgba(24, 214, 88, 0.651);
     width: 100%;
 }
 
-
 .footer_bottom_poster {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 5px 60px 5px 60px;
-    background-color: #e7e7e7;
-    color: rgb(0, 0, 0);
+    background-color: #e35050;
+    color: rgb(255, 255, 255);
 }
 
-.float-right {
+float-right {
     justify-content: right;
 }
-
 
 .Payment_gateway {
     display: flex;
@@ -45,21 +43,21 @@ h5 {
     justify-content: flex-end;
 }
 
-
-.font-20 {
-    font-size: 23px;
+.Payment_gateway {
+    position: relative;
+    top: 30%;
+    width: auto;
+    height: 15px;
 }
 
-.Newsletter_heading {
+.footer_newsletter {
+
+}
+
+Newsletter_heading {
     padding-top: 50px;
 }
 
-
-.location_map {
-    display: grid;
-}
-
-.footer_links {
-    text-decoration: none;
-    color: white;
+.footer_heading {
+    padding: 0 0 90px 0;
 }

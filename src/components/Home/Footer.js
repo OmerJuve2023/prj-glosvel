@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
             <AppStore/>
             <footer>
-                <div className="footer_sections">
+                <div className="footer_sections container">
                     <div className="company_info">
                         {/*<img src={Logo} width="180" alt=""/>*/}
                         <p className={"text-white"}>
@@ -32,78 +32,63 @@ const Footer = () => {
                                 title={"google map"}></iframe>
                         </div>
                     </div>
+                    <ul>
+                        <div className="footer_heading">
+                            <h5 className="text-white">Enlaces útiles</h5>
+                        </div>
+                        <li to={"/"} className="text-decoration-none text-white">
+                            Seguimiento del envío
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
+                            Seguimiento del autobús
+                        </li>
+
+                        <li to={"/"} className="text-decoration-none text-white">
+                            Nuestros autobuses
+                        </li>
+                    </ul>
                     <div>
                         <div className="footer_heading">
                             <h5 className="text-white">Enlaces útiles</h5>
                         </div>
-                        <Link to={"/"} className="footer_links">
-                            Seguimiento del envío
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
-
-                            Seguimiento del autobús
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
-                            Nuestros autobuses
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
-                            Inicio de sesión del agente
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
-                            Panel de usuario
-                        </Link>
-                        <br/>
-
-                        <br/>
-                    </div>
-                    <div className="footer_links">
-                        <div className="footer_heading">
-                            <h5 className="text-white">Enlaces útiles</h5>
-                        </div>
-                        <Link to={"/"} className="footer_links">
+                        <li to={"/"} className="text-decoration-none text-white">
                             Consulte nuestra guía de ayuda y seguridad de autobuses
-                        </Link>
-
-                        <br/>
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
+                            Inicio de sesión del agente
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
+                            Panel de usuario
+                        </li>
                     </div>
                     <div className="footer_links">
                         <div className="footer_heading">
                             <h5 className="text-white">Links importantess</h5>
                         </div>
-                        <Link to={"/"} className="footer_links">
+                        <li to={"/"} className="text-decoration-none text-white">
                             Política de cookies
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
 
                             política de privacidad
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
                             Términos y condiciones
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
                             Contáctenos
-                        </Link>
-                        <br/>
-                        <Link to={"/"} className="footer_links">
+                        </li>
+                        <li to={"/"} className="text-decoration-none text-white">
                             Reclamos
-                        </Link>
-                        <br/>
+                        </li>
                     </div>
-                    <div className="footer_newsletter text-center">
+                    {/* <div className="footer_newsletter text-center">
                         <div className="pb-4">Encuéntranos</div>
+                        <Link><i className="fa-brands fa-facebook font-20"></i> &nbsp;</Link>
                         <Link><i className="fa-brands fa-facebook font-20"></i> &nbsp;</Link>
                         <Link><i className="fa-brands fa-twitter font-20"></i> &nbsp;</Link>
                         <Link><i className="fa-brands fa-youtube font-20"></i> &nbsp;</Link>
                         <Link><i className="fa-brands fa-instagram font-20"></i> &nbsp;</Link>
-
-
                         <label className=" Newsletter_heading block mb-2">Mandar Info</label>
                         <input
                             type="email"
@@ -112,13 +97,11 @@ const Footer = () => {
                             required
                         />
                         <button className="Newsletter_button">Enviar</button>
-                        {/*<div className="container">
-                            <ToastContainer />
-                        </div>*/}
-
-                    </div>
+                    </div>*/}
                 </div>
-
+                <div className="footer_bottom_poster text-center">
+                    <div>Todos los derechos reservados @2023</div>
+                </div>
             </footer>
         </div>
     );
