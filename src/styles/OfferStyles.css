@@ -50,16 +50,16 @@ h3 {
     font-size: 25px;
 }
 
-.offer-boxes {
-    display: grid;
-    padding: 20px;
-    grid-template-columns: 1fr 2fr;
-    background-color: rgb(212, 16, 49);
-    color: white;
-    font-family: "Comic Sans MS",serif ;
-}
 
 @media only screen and (max-width: 768px) {
+    .offer-boxes {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr 2fr;
+        background-color: #e7d5d5;
+        color: white;
+        font-family: "Comic Sans MS", serif;
+    }
 
     .offer-box {
         padding: 10px 10px 20px 10px;
@@ -101,7 +101,8 @@ h3 {
         grid-template-columns: 1fr 2fr;
         height: auto;
         width: 100%;
-        background-color: #e7e7e7;
+        background-color: #e7d5d5;
+        font-family: "Comic Sans MS", serif;
         color: white;
     }
 

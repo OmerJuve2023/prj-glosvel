@@ -1,0 +1,65 @@
+footer {
+    background-color: black;
+}
+
+.footer_sections {
+    padding: 40px 60px 20px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    color: white;
+    gap: 30px;
+}
+
+.footer_heading {
+    padding: 0 0 90px 0;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.Newsletter_button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(24, 214, 88, 0.651);
+    width: 100%;
+}
+
+
+.footer_bottom_poster {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 60px 5px 60px;
+    background-color: #e7e7e7;
+    color: rgb(0, 0, 0);
+}
+
+.float-right {
+    justify-content: right;
+}
+
+
+.Payment_gateway {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.font-20 {
+    font-size: 23px;
+}
+
+.Newsletter_heading {
+    padding-top: 50px;
+}
+
+
+.location_map {
+    display: grid;
+}
+
+.footer_links {
+    text-decoration: none;
+    color: white;
+}

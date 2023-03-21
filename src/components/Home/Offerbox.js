@@ -6,11 +6,11 @@ function Offerbox({icon, Ongoing_Offers, Box_description}) {
     return (
         <section>
             <div className="offer-boxes">
-                <div className="text-center">{icon}</div>
-                <div className="box-description">
+                <div className="text-center fa-duotone">{icon}</div>
+                <div className="">
                     <h3>{Ongoing_Offers}</h3>
                     <p>{Box_description}</p>
-                    <Link className="mt-1" target={"_blank"} to={"/"}>
+                    <Link className="mt-1 text-decoration-none text-danger" target={"_blank"} to={"/"}>
                         ver más
                     </Link>
                 </div>

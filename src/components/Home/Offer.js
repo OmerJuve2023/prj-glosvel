@@ -18,7 +18,7 @@ const Offer = () => {
                 />
                 <Offerbox
                     icon={<img className={"img-fluid"} src={saveFood} alt={"fastFood"}/>}
-                    Ongoing_Offers="Reserva de comida"
+                    Ongoing_Offers=" Reserva de comida"
                     Box_description="Ofrecemos Servicio de Alimentación al Embarque. Bebidas, biryani, etc."
                 />
                 <Offerbox
