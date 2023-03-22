@@ -15,12 +15,12 @@ span {
 
 img {
     width: auto;
-    height: 80px;
+    height: 45px;
 }
 
 .app_store {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: #e7e7e7;
     padding: 20px 80px 20px 80px;
 }
@@ -49,7 +49,7 @@ small {
     }
 
     h4 {
-        font-size: 25px;
+        font-size: 40px;
         color: rgb(0, 0, 0);
         font-weight: 600;
     }
@@ -61,6 +61,7 @@ small {
 
     small {
         color: rgb(0, 0, 0);
+        font-size: 20px;
     }
 
 
@@ -81,7 +82,7 @@ small {
 
     img {
         width: auto;
-        height: 80px;
+        height: 90px;
     }
 }
 

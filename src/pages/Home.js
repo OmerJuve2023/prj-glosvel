@@ -21,9 +21,9 @@ const Home = () => {
             <MainSlider/>
             <MainFilter/>
             <Offer/>
-            {/*<WeOffer/>*/}
+            <WeOffer/>
             <OurBuses/>
-           {/* <AppStore/>*/}
+            <AppStore/>
             <Map></Map>
             <Footer/>
         </div>

@@ -329,6 +329,9 @@ ul {
         width: 50%;
         margin-bottom: 30px;
     }
+.footer{
+    grid-template-columns: 2fr 1fr 1fr 1fr
+}
 }
 
 @media (max-width: 574px) {

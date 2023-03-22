@@ -19,7 +19,7 @@ const MainSlider = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 4000,
+                delay: 4500,
                 disableOnInteraction: false,
             }}
             pagination={{
@@ -30,33 +30,33 @@ const MainSlider = () => {
             className="swiper-container"
         >
             <SwiperSlide>
-                <img
-                    src={Poster1}
-                    alt="slide 1"
+                <img className="object-fill w-full h-96"
+                     src={Poster1}
+                     alt="slide 1"
                 />
             </SwiperSlide>
             <SwiperSlide>
-                <img
-                    src={Poster3}
-                    alt="slide 2"
+                <img className="object-fill w-full h-96"
+                     src={Poster3}
+                     alt="slide 2"
                 />
             </SwiperSlide>
             <SwiperSlide>
-                <img
-                    src={Poster4}
-                    alt="slide 3"
+                <img className="object-fill w-full h-96"
+                     src={Poster4}
+                     alt="slide 3"
                 />
             </SwiperSlide>
             <SwiperSlide>
-                <img
-                    src={Poster5}
-                    alt="slide 3"
+                <img className="object-fill w-full h-96"
+                     src={Poster5}
+                     alt="slide 4"
                 />
             </SwiperSlide>
             <SwiperSlide>
-                <img
-                    src={Poster6}
-                    alt="slide 3"
+                <img className="object-fill w-full h-96"
+                     src={Poster6}
+                     alt="slide 5"
                 />
             </SwiperSlide>
 

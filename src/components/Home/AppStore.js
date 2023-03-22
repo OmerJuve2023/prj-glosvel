@@ -7,8 +7,8 @@ function AppStore() {
     return (
         <section className='app_store'>
             <div className="app_details">
-                <h4>Descargar la última aplicación Glosvel</h4>
-                <small>La aplicación Glosvel disponible en Google Play Store y Apple Sore</small>
+                <h4 className={"mb-0 h2"}>Descargar la última aplicación Glosvel</h4>
+                <small className={"h6 text-muted"}>La aplicación Glosvel disponible en Google Play Store y Apple Sore</small>
             </div>
             <div className="app_icons align-items-center">
                 <img src={GooglePlay} alt=""/> <img src={AppleStore} alt=""/>
