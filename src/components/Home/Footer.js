@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import AppStore from "./AppStore";
 import Logo from "../../assets/logo/logotipo 5.0.svg"
 import "../../styles/FooterStyles.css";
-import {MDBCol, MDBContainer, MDBRow, MDBFooter} from "mdbreact";
 
 
 const Footer = () => {
