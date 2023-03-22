@@ -5,9 +5,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import Poster4 from "../../assets/posters/poster_4.jpg";
 import Poster1 from "../../assets/posters/poster_1.jpg";
-import Poster2 from "../../assets/posters/poster-2.jpg";
-import Poster3 from "../../assets/posters/poster-3.jpg";
+import Poster5 from "../../assets/posters/poster_5.jpg";
+import Poster3 from "../../assets/posters/poster_3.jpg";
+import Poster6 from "../../assets/posters/poster_6.jpg";
 import {Autoplay, Pagination, Navigation} from "swiper";
 
 const MainSlider = () => {
@@ -35,16 +37,29 @@ const MainSlider = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <img
-                    src={Poster2}
+                    src={Poster3}
                     alt="slide 2"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <img
-                    src={Poster3}
+                    src={Poster4}
                     alt="slide 3"
                 />
             </SwiperSlide>
+            <SwiperSlide>
+                <img
+                    src={Poster5}
+                    alt="slide 3"
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img
+                    src={Poster6}
+                    alt="slide 3"
+                />
+            </SwiperSlide>
+
         </Swiper>
     );
 }
