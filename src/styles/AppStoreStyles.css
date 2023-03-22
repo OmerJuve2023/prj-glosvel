@@ -14,8 +14,8 @@ span {
 }
 
 img {
-    width: auto;
-    height: 45px;
+    width: 50%;
+    height: 50%;
 }
 
 .app_store {
@@ -82,7 +82,13 @@ small {
 
     img {
         width: auto;
-        height: 90px;
+        height: 80px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    img {
+        width: auto;
+        height: 40px;
+    }
+}

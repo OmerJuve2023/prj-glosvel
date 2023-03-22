@@ -49,23 +49,29 @@
 h3 {
     font-size: 25px;
 }
+.img-fluid{
+    height: 80px;
+    width: 60px;
+}
 
-
-@media only screen and (max-width: 768px) {
-    .offer-boxes {
+@media only screen and (min-width: 768px) {
+    .offer-box {
+        padding: 10px 60px 30px 60px;
         display: grid;
-        padding: 20px;
-        grid-template-columns: 4fr;
-        background-color: #e7d5d5;
-        color: white;
-        font-family: "Comic Sans MS", serif;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .offer-box {
-        padding: 10px;
+    .offer-boxes {
         display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr;
+        padding: 40px;
+        height: auto;
+        width: auto;
+        grid-template-columns: 1fr 3fr;
+        min-height: 200px;
+        gap: 1px;
+        background-color: #e7d5d5;
+        color: rgb(0, 0, 0);
     }
 
     .fa-duotone {
@@ -85,6 +91,10 @@ h3 {
     h3 {
         font-size: 20px;
     }
+    img {
+        height: 75%;
+        width: 75%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -96,8 +106,8 @@ h3 {
     }
 
     img {
-        height: 20px;
-        width: auto;
+        height: 60%;
+        width: 50%;
     }
 
     .offer-boxes {
