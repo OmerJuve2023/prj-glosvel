@@ -32,17 +32,14 @@ const Footer = () => {
                             <li><a href="#">Contáctenos</a></li>
                         </ul>
                     </div>
-                    <div className="">
-                        <div>
-                            <img className={" mx-2 imgLogito "} src={Logo}/>
-                        </div>
-                    </div>
-                    <div className="footer_bottom_poster text-center text-white h5">
-                        <div>Todos los derechos reservados @2023</div>
-                    </div>
                 </div>
+
+            </div>
+            <div className="footer_bottom_poster text-center text-white h5">
+                <div>Todos los derechos reservados @2023</div>
             </div>
         </footer>
+
     );
 }
 export default Footer;
