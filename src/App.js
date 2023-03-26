@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min";
-import DatosCliente from "./components/compra/datosCliente";
 import Informacion from "./components/compra/informacion";
 import Pago from "./components/compra/pago";
 
