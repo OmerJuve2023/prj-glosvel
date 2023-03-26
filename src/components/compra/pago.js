@@ -1,11 +1,19 @@
 import React from "react";
-/*import "../../styles/pagoStyles.css";*/
+import {useNavigate} from "react-router-dom";
 
 export default function Pago() {
+
     const jsoCompra = localStorage.getItem("compra");
     const compra = JSON.parse(jsoCompra);
     const jsoDatosBuss = localStorage.getItem("datosBuss");
     const datosBuss = JSON.parse(jsoDatosBuss);
+    const navigate = useNavigate();
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert("Se registro correctamente");
+        navigate("/");
+    }
+
     return (
         <div>
             <div className="container">
@@ -156,12 +164,17 @@ export default function Pago() {
                                     </div>
                                     <div className="col-md-3 mb-3">
                                         <label htmlFor="cc-cvv">CVV</label>
-                                        <input type="text" className="form-control" id="cc-cvv" placeholder=""
+                                        <input type="text"
+                                               className="form-control"
+                                               id="cc-cvv"
+                                               placeholder=""
                                                required/>
                                     </div>
                                 </div>
                                 <hr className="mb-4"/>
-                                <button className="btn btn-primary btn-lg btn-block" type="submit">Comprar Boleto
+                                <button className="btn btn-primary btn-lg btn-block"
+                                        type="submit"
+                                        onClick={handleSubmit}>Comprar Boleto
                                 </button>
                             </div>
                         </form>

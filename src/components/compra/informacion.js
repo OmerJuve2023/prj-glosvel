@@ -1,5 +1,5 @@
 import HeaderOne from "../Home/HeaderOne";
-import React, {useState} from "react";
+import React from "react";
 import Footer from "../Home/Footer";
 import "../../styles/InformacionStyles.css";
 import {useNavigate} from "react-router-dom";
