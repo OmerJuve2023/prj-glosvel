@@ -2,7 +2,10 @@ import React from "react";
 import "../../styles/pagoStyles.css";
 
 export default function Pago() {
-
+    const jsoCompra = localStorage.getItem("compra");
+    const compra = JSON.parse(jsoCompra);
+    const jsoDatosBuss = localStorage.getItem("datosBuss");
+    const datosBuss = JSON.parse(jsoDatosBuss);
     return (
         <div>
             <div className="container">
@@ -17,20 +20,20 @@ export default function Pago() {
                             <li className="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
                                     <h6 className="my-0">Lugar de destino:</h6>
-                                    <small className="text-muted">Brief description</small>
+                                    <small className="text-muted">{compra.llegada}</small>
                                 </div>
-                                <span className="text-muted">$12</span>
+                                <span className="text-muted">S/. {datosBuss.monto}.00</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between bg-light">
                                 <div className="text-success">
                                     <h6 className="my-0">Código Promocional</h6>
                                     <small>canje</small>
                                 </div>
-                                <span className="text-success">-$5</span>
+                                <span className="text-success">S/. 0.00 </span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between">
                                 <span>Total</span>
-                                <strong>$20</strong>
+                                <strong className={"h4"}>S/. {datosBuss.monto}.00</strong>
                             </li>
                         </ul>
 
@@ -38,7 +41,7 @@ export default function Pago() {
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder="código promocional"/>
                                 <div className="input-group-append">
-                                    <button type="submit" className="btn btn-secondary">Redeem</button>
+                                    <button type="submit" className="btn btn-secondary">Canjear</button>
                                 </div>
                             </div>
                         </form>
@@ -65,24 +68,15 @@ export default function Pago() {
                             <div className="mb-3">
                                 <label htmlFor="username">Nombre de Usuario</label>
                                 <div className="input-group">
-                                    {/* <div className="input-group-prepend">
-                                        <span className="input-group-text">@</span>
-                                    </div>*/}
                                     <input type="text" className="form-control" id="username"
                                            placeholder="ejemplo: omer215"
                                            required/>
-                                    <div className="invalid-feedback">
-                                        Your username is required.
-                                    </div>
                                 </div>
                             </div>
 
                             <div className="mb-3">
                                 <label htmlFor="email">Correo Electrónico <span className="text-muted">(Opcional)</span></label>
                                 <input type="email" className="form-control" id="email" placeholder="tu@ejemplo.com"/>
-                                <div className="invalid-feedback">
-                                    Please enter a valid email address for shipping updates.
-                                </div>
                             </div>
 
                             <div className="mb-3">
@@ -90,11 +84,7 @@ export default function Pago() {
                                 <input type="text" className="form-control" id="address"
                                        placeholder="1234 calle principal"
                                        required/>
-                                <div className="invalid-feedback">
-                                    Please enter your shipping address.
-                                </div>
                             </div>
-
                             <div className="row">
                                 <div className="col-md-5 mb-3">
                                     <label htmlFor="country">Departamento</label>
@@ -109,56 +99,40 @@ export default function Pago() {
                                         <option>Lima</option>
                                         <option>Ica</option>
                                     </select>
-                                    <div className="invalid-feedback">
-                                        Please select a valid country.
-                                    </div>
-                                </div>
-                                <div className="col-md-4 mb-3">
-                                    <label htmlFor="state">State</label>
-                                    <select className="custom-select d-block w-100" id="state" required>
-                                        <option value="">Choose...</option>
-                                        <option>California</option>
-                                    </select>
-                                    <div className="invalid-feedback">
-                                        Please provide a valid state.
-                                    </div>
+
                                 </div>
                                 <div className="col-md-3 mb-3">
-                                    <label htmlFor="zip">Zip</label>
+                                    <label htmlFor="zip">DNI</label>
                                     <input type="text" className="form-control" id="zip" placeholder="" required/>
-                                    <div className="invalid-feedback">
-                                        Zip code required.
-                                    </div>
                                 </div>
                             </div>
                             <hr className="mb-4"/>
                             <div className="custom-control custom-checkbox">
                                 <input type="checkbox" className="custom-control-input" id="same-address"/>
-                                <label className="custom-control-label" htmlFor="same-address">Shipping address
-                                    is the same as my billing address</label>
+                                <label className="custom-control-label" htmlFor="same-address">La dirección de envío es
+                                    la misma que mi dirección de facturación</label>
                             </div>
                             <div className="custom-control custom-checkbox">
                                 <input type="checkbox" className="custom-control-input" id="save-info"/>
-                                <label className="custom-control-label" htmlFor="save-info">Save this
-                                    information
-                                    for next time</label>
+                                <label className="custom-control-label" htmlFor="save-info">Guardar esta información
+                                    para la próxima vez</label>
                             </div>
                             <div className="mb-4">
 
-                                <h4 className="mb-3">Payment</h4>
+                                <h4 className="mb-3">Pago</h4>
 
                                 <div className="d-block my-3">
                                     <div className="custom-control custom-radio">
                                         <input id="credit" name="paymentMethod" type="radio"
                                                className="custom-control-input" checked required/>
-                                        <label className="custom-control-label" htmlFor="credit">Credit
-                                            card</label>
+                                        <label className="custom-control-label" htmlFor="credit">Tarjeta de
+                                            Credito</label>
                                     </div>
                                     <div className="custom-control custom-radio">
                                         <input id="debit" name="paymentMethod" type="radio"
                                                className="custom-control-input" required/>
-                                        <label className="custom-control-label" htmlFor="debit">Debit
-                                            card</label>
+                                        <label className="custom-control-label" htmlFor="debit">Tarjeta de
+                                            Debito</label>
                                     </div>
                                     <div className="custom-control custom-radio">
                                         <input id="paypal" name="paymentMethod" type="radio"
