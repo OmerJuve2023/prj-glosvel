@@ -12,6 +12,9 @@ import React from "react";
 import Map from "../components/Home/map";
 
 const Home = () => {
+    fetch = () => {
+        localStorage.clear();
+    }
     return (
         <div>
             <header className={"p-3 bg-dark text-white py-0"}>
