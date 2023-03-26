@@ -161,7 +161,7 @@ export default function Pago() {
                                 </div>
                                 <div className="row">
                                     <div className="col-md-3 mb-3">
-                                        <label htmlFor="cc-expiration">Expiration</label>
+                                        <label htmlFor="cc-expiration">Expiración</label>
                                         <input type="text" className="form-control" id="cc-expiration"
                                                placeholder=""
                                                required/>
@@ -179,8 +179,7 @@ export default function Pago() {
                                     </div>
                                 </div>
                                 <hr className="mb-4"/>
-                                <button className="btn btn-primary btn-lg btn-block" type="submit">Continue to
-                                    checkout
+                                <button className="btn btn-primary btn-lg btn-block" type="submit">Comprar Boleto
                                 </button>
                             </div>
                         </form>
