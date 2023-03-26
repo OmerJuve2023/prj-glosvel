@@ -25,124 +25,74 @@ export default function Informacion() {
         localStorage.setItem("compra2", compras);
         navigate("/pago");
     }
-    const handleSubmit1 = (event) => {
-        event.preventDefault();
-        setBuss("San Martin de Porres");
-        const compritas = JSON.stringify(compra2);
-        localStorage.setItem("compra2", compritas);
-        navigate("/pago");
-    }
-    const handleSubmit2 = (event) => {
-        event.preventDefault();
-        setBuss("Paramonga");
-        const comp = JSON.stringify(compra2);
-        localStorage.setItem("compra2", comp);
-        navigate("/pago");
-    }
+
     return (
         <div>
             <header className={"p-3 bg-dark text-white py-0 mb-4"}>
                 <HeaderOne/>
             </header>
-            <div className={"container"}>
-                <h2>Seleccione una de las opciones: </h2>
-                <table className={"rounded-3 p-3 bg-light"}>
-                    <thead>
-                    <tr>
-                        <th>Empresa ZBuss</th>
-                        <th>&nbsp;</th>
-                        <th className={"text-end"}> S 92</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td className={"text-end"}>2:00 pm</td>
-                        <td className={""}>salida</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td className={"text-end"}>4:00 pm</td>
-                        <td>llegada</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>2 horas</td>
-                        <td>&nbsp;</td>
-                        <td className={"text-end"}>
-                            <button className={"btn btn-danger"}
-                                    type={"submit"}
-                                    onClick={handleSubmit}>Seleccionar
-                            </button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br/>
-                <table className={"rounded-3 p-3 bg-light"}>
-                    <thead>
-                    <tr>
-                        <th>Empresa San Martin de Porres</th>
-                        <th>&nbsp;</th>
-                        <th className={"text-end"}> S 92</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td className={"text-end"}>2:00 pm</td>
-                        <td className={""}>salida</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td className={"text-end"}>4:00 pm</td>
-                        <td>llegada</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>2 horas</td>
-                        <td>&nbsp;</td>
-                        <td className={"text-end"}>
-                            <button className={"btn btn-danger"}
-                                    type={"submit"}
-                                    onClick={handleSubmit1}>Seleccionar
-                            </button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br/>
-                <table className={"rounded-3 p-3 bg-light"}>
-                    <thead>
-                    <tr>
-                        <th>Empresa Paramonga</th>
-                        <th>&nbsp;</th>
-                        <th className={"text-end"}> S 92</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td className={"text-end"}>2:00 pm</td>
-                        <td className={""}>salida</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td className={"text-end"}>4:00 pm</td>
-                        <td>llegada</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>2 horas</td>
-                        <td>&nbsp;</td>
-                        <td className={"text-end"}>
-                            <button className={"btn btn-danger"}
-                                    type={"submit"}
-                                    onClick={handleSubmit2}>Seleccionar
-                            </button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br/>
+            <div className="container">
+                <form>
+                    <div className="form-group mb-3">
+                        <div className={"container container-fluid"}>
+                            <h2>Seleccione una de las opciones: </h2>
+                            <div className={"rounded-3 p-3 bg-light mb-3"}>
+                                <div className={"row "}>
+                                    <div className={"col-6 h5"}>Empresa ZBuss</div>
+                                    <div className={"col-6 text-end"}><b> S./ 20.00</b></div>
+                                    <div className={"col-6 text-end"}>2:00 pm</div>
+                                    <div className={"col-6 text-start"}>salida</div>
+                                    <div className={"col-6 text-end"}>4:00 pm</div>
+                                    <div className={"col-6 text-start"}>llegada</div>
+                                    <div className={"col-6"}>2 horas</div>
+                                    <div className={"col-6 text-end"}>
+                                        <button className={"btn btn-danger"}
+                                                type={"submit"}
+                                                onClick={handleSubmit}>Seleccionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={"rounded-3 p-3 bg-light mb-3"}>
+                                <div className={"row mb-4"}>
+                                    <div className={"col-6 h5"}>Empresa San Martín de Porres</div>
+                                    <div className={"col-6 text-end"}><b> S./ 20.00</b></div>
+                                    <div className={"col-6 text-end"}>2:00 pm</div>
+                                    <div className={"col-6 text-start"}>salida</div>
+                                    <div className={"col-6 text-end"}>4:00 pm</div>
+                                    <div className={"col-6 text-start"}>llegada</div>
+                                    <div className={"col-6"}>2 horas</div>
+                                    <div className={"col-6 text-end"}>
+                                        <button className={"btn btn-danger"}
+                                                type={"submit"}
+                                                onClick={handleSubmit}>Seleccionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={"rounded-3 p-3 bg-light"}>
+                                <div className={"row mb-4"}>
+                                    <div className={"col-6 h5"}>Empresa Paramonga</div>
+                                    <div className={"col-6 text-end"}><b> S./ 20.00</b></div>
+                                    <div className={"col-6 text-end"}>2:00 pm</div>
+                                    <div className={"col-6 text-start"}>salida</div>
+                                    <div className={"col-6 text-end"}>4:00 pm</div>
+                                    <div className={"col-6 text-start"}>llegada</div>
+                                    <div className={"col-6"}>2 horas</div>
+                                    <div className={"col-6 text-end"}>
+                                        <button className={"btn btn-danger"}
+                                                type={"submit"}
+                                                onClick={handleSubmit}>Seleccionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
+
+
             <Footer/>
         </div>
     );

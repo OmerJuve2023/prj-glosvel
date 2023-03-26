@@ -2,23 +2,7 @@ import React from "react";
 import "../../styles/pagoStyles.css";
 
 export default function Pago() {
-    (function () {
-        'use strict'
-        window.addEventListener('load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation')
-            // Loop over them and prevent submission
-            Array.prototype.filter.call(forms, function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        }, false)
-    }())
+
     return (
         <div>
             <div className="container">
@@ -26,47 +10,33 @@ export default function Pago() {
                 <div className="row">
                     <div className="col-md-4 order-md-2 mb-4">
                         <h4 className="d-flex justify-content-between align-items-center mb-3">
-                            <span className="text-muted">Your cart</span>
+                            <span className="text-muted">Tu carrito</span>
                             <span className="badge badge-secondary badge-pill">3</span>
                         </h4>
                         <ul className="list-group mb-3">
                             <li className="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
-                                    <h6 className="my-0">Product name</h6>
+                                    <h6 className="my-0">Lugar de destino:</h6>
                                     <small className="text-muted">Brief description</small>
                                 </div>
                                 <span className="text-muted">$12</span>
                             </li>
-                            <li className="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 className="my-0">Second product</h6>
-                                    <small className="text-muted">Brief description</small>
-                                </div>
-                                <span className="text-muted">$8</span>
-                            </li>
-                            <li className="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 className="my-0">Third item</h6>
-                                    <small className="text-muted">Brief description</small>
-                                </div>
-                                <span className="text-muted">$5</span>
-                            </li>
                             <li className="list-group-item d-flex justify-content-between bg-light">
                                 <div className="text-success">
-                                    <h6 className="my-0">Promo code</h6>
-                                    <small>EXAMPLECODE</small>
+                                    <h6 className="my-0">Código Promocional</h6>
+                                    <small>canje</small>
                                 </div>
                                 <span className="text-success">-$5</span>
                             </li>
                             <li className="list-group-item d-flex justify-content-between">
-                                <span>Total (USD)</span>
+                                <span>Total</span>
                                 <strong>$20</strong>
                             </li>
                         </ul>
 
                         <form className="card p-2">
                             <div className="input-group">
-                                <input type="text" className="form-control" placeholder="Promo code"/>
+                                <input type="text" className="form-control" placeholder="código promocional"/>
                                 <div className="input-group-append">
                                     <button type="submit" className="btn btn-secondary">Redeem</button>
                                 </div>
@@ -74,19 +44,16 @@ export default function Pago() {
                         </form>
                     </div>
                     <div className="col-md-8 order-md-1">
-                        <h4 className="mb-3">Billing address</h4>
+                        <h4 className="mb-3">Información Personal</h4>
                         <form className="needs-validation" noValidate>
                             <div className="row">
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="firstName">First name</label>
+                                    <label htmlFor="firstName">Nombres</label>
                                     <input type="text" className="form-control" id="firstName" placeholder="" value=""
                                            required/>
-                                    <div className="invalid-feedback">
-                                        Valid first name is required.
-                                    </div>
                                 </div>
                                 <div className="col-md-6 mb-3">
-                                    <label htmlFor="lastName">Last name</label>
+                                    <label htmlFor="lastName">Apellido</label>
                                     <input type="text" className="form-control" id="lastName" placeholder="" value=""
                                            required/>
                                     <div className="invalid-feedback">
@@ -96,12 +63,13 @@ export default function Pago() {
                             </div>
 
                             <div className="mb-3">
-                                <label htmlFor="username">Username</label>
+                                <label htmlFor="username">Nombre de Usuario</label>
                                 <div className="input-group">
-                                    <div className="input-group-prepend">
+                                    {/* <div className="input-group-prepend">
                                         <span className="input-group-text">@</span>
-                                    </div>
-                                    <input type="text" className="form-control" id="username" placeholder="Username"
+                                    </div>*/}
+                                    <input type="text" className="form-control" id="username"
+                                           placeholder="ejemplo: omer215"
                                            required/>
                                     <div className="invalid-feedback">
                                         Your username is required.
@@ -110,35 +78,36 @@ export default function Pago() {
                             </div>
 
                             <div className="mb-3">
-                                <label htmlFor="email">Email <span className="text-muted">(Optional)</span></label>
-                                <input type="email" className="form-control" id="email" placeholder="you@example.com"/>
+                                <label htmlFor="email">Correo Electrónico <span className="text-muted">(Opcional)</span></label>
+                                <input type="email" className="form-control" id="email" placeholder="tu@ejemplo.com"/>
                                 <div className="invalid-feedback">
                                     Please enter a valid email address for shipping updates.
                                 </div>
                             </div>
 
                             <div className="mb-3">
-                                <label htmlFor="address">Address</label>
-                                <input type="text" className="form-control" id="address" placeholder="1234 Main St"
+                                <label htmlFor="address">Dirección</label>
+                                <input type="text" className="form-control" id="address"
+                                       placeholder="1234 calle principal"
                                        required/>
                                 <div className="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
                             </div>
 
-                            <div className="mb-3">
-                                <label htmlFor="address2">Address 2 <span
-                                    className="text-muted">(Optional)</span></label>
-                                <input type="text" className="form-control" id="address2"
-                                       placeholder="Apartment or suite"/>
-                            </div>
-
                             <div className="row">
                                 <div className="col-md-5 mb-3">
-                                    <label htmlFor="country">Country</label>
+                                    <label htmlFor="country">Departamento</label>
                                     <select className="custom-select d-block w-100" id="country" required>
-                                        <option value="">Choose...</option>
+                                        <option value="">Elegir...</option>
                                         <option>United States</option>
+                                        <option>Tumbes</option>
+                                        <option>Piura</option>
+                                        <option>Lambayeque</option>
+                                        <option>La libertad</option>
+                                        <option>Ancash</option>
+                                        <option>Lima</option>
+                                        <option>Ica</option>
                                     </select>
                                     <div className="invalid-feedback">
                                         Please select a valid country.
