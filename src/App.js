@@ -15,7 +15,6 @@ function App() {
                     <Route path={"/"} element={<Home/>}/>
                     <Route path={"/informacion"} element={<Informacion/>}/>
                     <Route path={"/pago"} element={<Pago/>}/>
-                    <Route path={"/datosCliente"} element={<DatosCliente/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
