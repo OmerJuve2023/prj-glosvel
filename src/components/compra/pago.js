@@ -126,9 +126,7 @@ export default function Pago() {
                                     para la próxima vez</label>
                             </div>
                             <div className="mb-4">
-
                                 <h4 className="mb-3">Pago</h4>
-
                                 <div className="d-block my-3">
                                     <div className="custom-control custom-radio">
                                         <input id="credit" name="paymentMethod" type="radio"
