@@ -43,7 +43,7 @@ export default function Informacion() {
                             <div className={"rounded-3 p-3 bg-light mb-3"}>
                                 <div className={"row"}>
                                     <div className={"col-6 h5"}>Empresa San Martín de Porres</div>
-                                    <div className={"col-6 text-end h5"}><b> S./ 20.00</b></div>
+                                    <div className={"col-6 text-end h5"}><b> S./ 19.00</b></div>
                                     <div className={"col-6 text-end"}>2:00 pm</div>
                                     <div className={"col-6 text-start"}>{compra.salida}</div>
                                     <div className={"col-6 text-end"}>4:00 pm</div>
@@ -52,7 +52,7 @@ export default function Informacion() {
                                     <div className={"col-6 text-end"}>
                                         <button className={"btn btn-danger"}
                                                 type={"submit"}
-                                                onClick={() => handleValue("20", "San Martín de Porres")}>Seleccionar
+                                                onClick={() => handleValue("19", "San Martín de Porres")}>Seleccionar
                                         </button>
                                     </div>
                                 </div>
