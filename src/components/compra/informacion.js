@@ -69,7 +69,7 @@ export default function Informacion() {
                                     <div className={"col-6 text-end"}>
                                         <button className={"btn btn-danger"}
                                                 type={"submit"}
-                                                onClick={() => handleValue("20", "Paramonga")}>Seleccionar
+                                                onClick={() => handleValue("19", "Paramonga")}>Seleccionar
                                         </button>
                                     </div>
                                 </div>
